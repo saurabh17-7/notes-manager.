@@ -44,6 +44,8 @@ cd notes-manager
 Install dependencies:
 npm install
 
+---
+
 ## Docker Deployment->
 1)Build the Docker image:
 sudo docker build -t notes-manager .
@@ -56,6 +58,8 @@ sudo docker stop notes-manager-app
 sudo docker rm notes-manager-app
 5)Restart container after EC2 reboot:
 sudo docker start notes-manager-app
+
+---
 
 ## Jenkins CI/CD
 
@@ -73,6 +77,8 @@ Remove old container: docker rm notes-manager-app
 
 Run new container: docker run -d --name notes-manager-app -p 8000:8000 notes-manager
 
+---
+
 ## Usage
 
 Navigate to the web app in your browser.
@@ -81,9 +87,13 @@ Add, edit, and delete notes in real time.
 
 All changes are stored locally in your Docker container.
 
+---
+
 ##License
 
 This project is open-source and free to use.
+
+---
 
 ## Deployed on: AWS EC2 with Docker and Jenkins
 Author: Saurabh Pawar
